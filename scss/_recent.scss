@@ -1,0 +1,41 @@
+.recent {
+  padding: 60px 0;
+  text-align: center;
+
+  &__title {
+    font-size: 24px;
+    margin-bottom: 40px;
+    position: relative;
+  }
+
+    &__grid {
+    display: grid;
+    gap: 24px;
+    grid-template-columns: auto auto auto;
+  }
+
+    &__item {
+    position: relative;
+    border-radius: 10px;
+    background-color: aliceblue;
+    color: black;
+    text-align: left;
+    }
+
+        p {
+      bottom: 40px;
+      padding: 7px;
+      font-size: 14px;
+    }
+    
+    .meta {
+        padding: 7px;
+      bottom: 15px;
+      font-size: 13px;
+      display: flex;
+      justify-content: space-between;
+    }
+}
+
+
+

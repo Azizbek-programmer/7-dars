@@ -1,0 +1,78 @@
+@import "global";
+@import "header";
+@import "hero";
+@import "category";
+@import "posts";
+@import "recent";
+
+
+
+
+
+// .navbar{
+//     display: flex;
+//     height: 80px;
+//     align-items: center;
+//     justify-content: space-between;
+//     &__logo{
+//         font-weight: 800;
+//         font-size: 22px;
+//         text-transform: uppercase;
+//     }
+//     &__collection{
+//         display: flex;
+//         list-style: none;
+//         gap: 40px;
+//     }
+//     &__options{
+//         display: flex;
+//         gap: 20px;
+//     }
+//     &__menu{
+//         display: none;
+//     }
+// }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:990px) {
+    .title{
+        background: dodgerblue;
+        font-size: 45px;
+    }
+    .navbar{
+        &__collection{
+            display: none;
+        }
+        &__options{
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            background: white;
+            border-top: 1px solid #ddd;
+            padding: 14px;
+            justify-content: space-evenly;
+        }
+          &__menu{
+            display: block;
+        }
+    }
+}
+@media (max-width:600px) {
+    .title{
+        background: gold;
+        font-size: 30px;
+    }
+}

@@ -1,0 +1,18 @@
+.category{  
+    display: flex;
+    .category__collagetion{
+        display: grid;
+        width: 100%;
+        gap: 21px;
+        grid-template-columns: auto auto auto auto auto auto ;
+        height: 65px;
+        text-align: center;
+        .category_item{
+            text-align: center;
+            justify-content: center;
+            width: 100%;
+            padding-top: 20px;
+        }
+
+    }
+}
