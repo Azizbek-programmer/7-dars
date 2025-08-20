@@ -1,34 +1,37 @@
 .hero{
-    height: 500px;
-    background: url("../assets/hero.png") no-repeat center/cover;
-    display: grid;
-    place-items: center;
-    text-align: center;
+  height: 500px;
+  background: url("../assets/hero.png") no-repeat center/cover;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  color: white;
+  button{
+    background-color: #DD783F;
     color: white;
-    button{
-        background-color: #DD783F;
-        color: white;
-        // width: 30%;
-        padding: 12px;
-        font-size: 15px;
-    }
+    // width: 30%;
+    padding: 12px;
+    font-size: 15px;
+  }
 }
 
 @media (min-width: 1000%) {
   .hero h1 {
     font-size: 48px;
   }
-
+  
   .hero p {
     font-size: 20px;
   }
 }
 
 @media (max-width: 700px) {
+  .hero{
+    height: 370px;
+  }
   .hero h1 {
     font-size: 36px;
   }
-
+  
   .hero p {
     font-size: 18px;
   }
@@ -43,6 +46,7 @@
     .hero {
         padding: 0 15px;
         height: 400px;
+        width: 100%;
     }
     
     .hero h1 {

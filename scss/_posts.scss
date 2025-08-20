@@ -1,49 +1,49 @@
 .posts {
   padding: 60px 0;
   text-align: center;
-
+  
   &__title {
     font-size: 24px;
     margin-bottom: 40px;
     position: relative;
   }
-
+  
   &__grid {
     display: grid;
     gap: 24px;
     grid-template-columns: auto auto;
   }
-
+  
   &__item {
     position: relative;
     border-radius: 10px;
     color: #fff;
     text-align: left;
-
+    
     h2, p, .meta, .tag {
       position: absolute;
       left: 20px;
       right: 20px;
       z-index: 2;
     }
-
+    
     h2 {
       bottom: 60px;
       font-size: 22px;
     }
-
+    
     p {
       bottom: 40px;
       font-size: 14px;
     }
-
+    
     .meta {
       bottom: 15px;
       font-size: 13px;
       display: flex;
       justify-content: space-between;
     }
-
+    
     .tag {
       top: 15px;
       left: 15px;
@@ -54,4 +54,21 @@
       border-radius: 3px;
     }
   }
+}
+
+@media (max-width: 700px) {
+  .posts {
+    
+    &__grid {
+      padding: 10px 0;
+      text-align: center;
+      margin-bottom: 40px;
+      position: relative;
+      justify-content: center;
+      display: grid;
+      gap: 15px;
+      grid-template-columns: auto;
+    }
+  }
+  
 }
